@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-run-codeblock",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "run simple code in vuepress markdowm containner",
   "keywords": [
     "documentation",
