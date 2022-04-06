@@ -10,6 +10,11 @@
     "run",
     "markdowm"
   ],
+  "homepage": "https://github.com/qinwencheng/vuepress-plugin-run-codeblock#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qinwencheng/vuepress-plugin-run-codeblock.git"
+  },
   "main": "lib/index.js",
   "author": "qinwencheng <qinwencheng719@gmail.com>",
   "license": "MIT"
