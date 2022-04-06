@@ -1,0 +1,16 @@
+{
+  "name": "vuepress-plugin-run-codeblock",
+  "version": "1.0.4",
+  "description": "run simple code in vuepress markdowm containner",
+  "keywords": [
+    "documentation",
+    "generator",
+    "vue",
+    "vuepress",
+    "run",
+    "markdowm"
+  ],
+  "main": "lib/index.js",
+  "author": "qinwencheng <qinwencheng719@gmail.com>",
+  "license": "MIT"
+}

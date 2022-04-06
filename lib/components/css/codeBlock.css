@@ -1,0 +1,102 @@
+ button {
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+}
+
+/*---------------------------------代码框---------------------------------*/
+
+/* 减少按钮和正上方代码框的距离 */
+div.raw-code > div[class*="language-"] pre[class*="language-"] {
+  /* margin-bottom: -4px; */
+  margin-bottom: 0px;
+  /* padding-top: 23px; */
+}
+
+/* 代码块右上角字体 */
+div.raw-code > div[class*="language-"]::before {
+  content: var(--content);
+  color: rgb(130, 170, 255);
+  top: 4px;
+  font-size: 0.77em;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+/* 补充更改一些代码token颜色（注：从其他主题同token的颜色抄过来的，应该不会有换主题后的冲突 */
+div.raw-code > div[class*="language-"] pre[class*="language-"] code .token.boolean,
+div.raw-code > div[class*="language-"] pre[class*="language-"] code .token.number 
+{
+  color: #ff628c;
+}
+
+div.raw-code > div[class*="language-"] pre[class*="language-"] code .token.punctuation {
+	color: #81A1C1;
+  font-weight: bold;
+}
+
+div.raw-code > div[class*="language-"] pre[class*="language-"] code .operator {
+  color: #a77afe;
+}
+
+div.raw-code > div[class*="language-"] pre[class*="language-"] code .token.string {
+  color: #47ebb4;
+}
+
+
+
+/* ----------------运行按钮---------------- */
+.bottom-bar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bottom-bar > .bottom-bar-item > .run-button {
+  margin-right: -4px;
+  width: 35px;
+  height: 35px;
+  color: #0eada0;
+  outline: none;
+  z-index: 100;
+}
+/* ----------------运行按钮---------------- */
+
+
+
+
+
+
+/* ------------------------运行结果代码框------------------------ */
+
+div.language-bash.resultdiv > pre.language-bash.resultpre {
+  position: relative;
+	border-left: 10px solid #358ccb;
+	box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;
+	background-color: #fdfdfd;
+	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	background-attachment: local;
+	margin: 1em 0 .5em 0;
+	padding: 1.25rem 1.5rem 1.25rem calc(1.5rem - 10px);
+  line-height: 1.5;
+  /* border-radius: 0 */
+}
+
+/* 括号 */
+div.language-bash.resultdiv > pre.language-bash.resultpre > code > span.token.punctuation {
+	color: #5F6364;
+}
+
+/* 普通字体颜色 */
+div.language-bash.resultdiv > pre.language-bash.resultpre > code {
+  color: black;
+}
+
+/* 右上角显示的语言 */
+div.language-bash.resultdiv::before {
+  top: 0px;
+  color: #358ccb;
+}
+
+/* ------------------------运行结果代码框------------------------ */
+
