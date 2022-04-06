@@ -26,13 +26,15 @@ plugins: [
 
 #### use in markdowm 
 
-##### base
+- base
 
+````md
 ::: run
 ```js
 console.log('js')
 ```
 :::
+````
 
 
 ![1](./img/1.png)
@@ -41,18 +43,20 @@ you can click the button to run the code
 
 ![2](./img/2.png)
 
-##### show file name
+- show file name
+````md
 ::: run file/lib/index.js
 ```js
 console.log('js')
 ```
 :::
+````
 ![3](./img/3.png)
 
 
 
-##### use in another container
-
+- use in another container
+````md
 :::: details Click me to view the code
 ::: run
 ```js
@@ -60,6 +64,7 @@ console.log('js')
 ```
 :::
 ::::
+````
 
 ![4](./img/4.png)
 
