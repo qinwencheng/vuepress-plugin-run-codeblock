@@ -72,7 +72,7 @@ console.log('js')
 see: [markdown-it-container/issues](https://github.com/markdown-it/markdown-it-container/issues/33#issuecomment-551111227)
 
 ## About 
-the api is supported by [https://wandbox.org/](https://wandbox.org/)
+the api was supported by [https://wandbox.org/](https://wandbox.org/)
 
 
 
